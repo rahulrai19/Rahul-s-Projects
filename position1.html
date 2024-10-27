@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+      height: 5000px;vh;
+      width:100%%;
+      border:1px solid;
+      border-color: red;
+
+    }
+    .a{
+        height:50px;
+        width:50%;
+        border:4px solid;
+        border-color:aqua;
+        position: static;
+      
+    }
+    .b{
+        height:50px;
+        width:50%;
+        border:4px solid;
+        position:relative;
+        left: 20%;
+        right:50%;
+        top: 20%;
+        border-color:bisque
+    }
+    .c{
+        height:50px;
+        width:50%;
+        border:4px solid;
+        position: absolute;
+        left: 20px;
+
+    }
+    .d{
+        height:50px;
+        width:50%;
+        border:4px solid;
+        position: fixed;
+    }
+    .e{
+        height:auto;
+        width:auto;
+        border:4px solid;
+        position:sticky;
+        border-color: brown;
+    }
+</style>
+<body>
+    <div class="container">
+    <div class="a">
+        Static
+    </div>
+    <div class="b">
+        relative
+    </div>
+    <div class="c">
+        Absolute
+    </div>
+    <div class="d">
+      Fixed
+    </div>
+    <div class="e">
+        Sticky
+    </div>
+    </div>
+</body>
+</html>

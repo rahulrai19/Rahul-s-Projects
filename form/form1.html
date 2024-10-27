@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <form>
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" >
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" id="email" name ="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="phone" id="phone" name="phone" placeholder="Enter phone">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <!-- Adding a link for "Forgot Password?" -->
+        <div class="form-footer">
+            <p>Forgot your password? <a href="#">Click here to reset it</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

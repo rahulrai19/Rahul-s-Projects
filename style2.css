@@ -1,0 +1,54 @@
+body {  
+    margin: 0;  
+    font-family: Arial, sans-serif;  
+    background-color: #f0f0f0;  
+}  
+
+.container {  
+    display: flex;  
+    justify-content: center;  
+    margin-top: 20px;  
+}  
+
+.box {  
+    width: 200px;  
+    padding: 20px;  
+    margin: 10px;  
+    border-radius: 8px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    position: relative; /* Added for absolute positioning of marquee */  
+    overflow: hidden; /* Hide overflow of the marquee */  
+}  
+
+.green {  
+    background-color: #d4edda;  
+}  
+
+.red {  
+    background-color: #f8d7da;  
+}  
+
+.yellow {  
+    background-color: #fff3cd;  
+}  
+
+.marquee {  
+    position: relative;  
+    height: 50px; /* Height of the scrolling area */  
+    overflow: hidden; /* Hide overflow */  
+}  
+
+.marquee-content {  
+    position: absolute;  
+    width: 100%;  
+    animation: marquee 5s linear infinite; /* Animation duration */  
+}  
+
+@keyframes marquee {  
+    0% {  
+        transform: translateY(100%); /* Start below the view */  
+    }  
+    100% {  
+        transform: translateY(-100%); /* End above the view */  
+    }  
+}

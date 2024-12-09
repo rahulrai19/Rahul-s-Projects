@@ -3,24 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="style3.css"> -->
-     <style>
-        .card{
-            width:20%;
-            height: 10%;
-            
+    <title>User Profiles</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
         }
-        .image{
-            width:10%;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
         }
-     </style>
+
+        .card {
+            background-color: white;
+            width: 200px; 
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(174, 41, 41, 0.5);
+            /* overflow: hidden;  */
+            text-align: center;
+            /* transition: transform 0.2s;*/
+        }
+
+        /* .card:hover {
+            transform: scale(1.05); 
+        } */
+
+        .image img {
+            width: 100%;
+            height: auto; 
+            box-shadow: 1px 1px 3px rgba(149, 108, 108, 0.5);
+        }
+
+        button {
+            background-color: bisque;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: aqua;
+        }
+
+        h4 {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <div class="card">
-        <div class="image">
-            <img src="User-Profile-PNG.png" alt=""> 
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="User-Profile-PNG.png" alt="User  Profile">
+            </div>
+            <div class="description">
+                <h4>Rahul Rai</h4>
+                <button>Read More</button>
+            </div>
+        </div>
 
+        <div class="card">
+            <div class="image">
+                <img src="User-Profile-PNG.png" alt="User  Profile">
+            </div>
+            <div class="description">
+                <h4>Rahul Rai</h4>
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="User-Profile-PNG.png" alt="User  Profile">
+            </div>
+            <div class="description">
+                <h4>Rahul Rai</h4>
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="User-Profile-PNG.png" alt="User  Profile">
+            </div>
+            <div class="description">
+                <h4>Rahul Rai</h4>
+                <button>Read More</button>
+            </div>
         </div>
     </div>
 </body>

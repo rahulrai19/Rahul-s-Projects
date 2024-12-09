@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.btn.primary:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.btn.secondary {
+    background-color: #008CBA;
+    color: white;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.btn.secondary:hover {
+    background-color: #007bb5;
+    transform: translateY(-5px);
+}
+
+.btn.success {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn.success:hover {
+    background-color: #45a049;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn.danger {
+    background-color: #f44336;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.danger:hover {
+    background-color: #e41e10;
+    transform: rotate(5deg);
+}
+
+.btn.warning {
+    background-color: #ff9800;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.warning:hover {
+    background-color: #e68900;
+    transform: skewX(5deg);
+}
+
+.btn.info {
+    background-color: #2196F3;
+    color: white;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.btn.info:hover {
+    background-color: #1e87f0;
+    border-radius: 10px;
+}
+
+.btn.dark {
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.btn.dark:hover {
+    background-color: #111;
+    border-radius: 50px;
+}
+
+.btn.light {
+    background-color: #f1f1f1;
+    color: #333;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.light:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+.btn.link {
+    background-color: transparent;
+    color: #2196F3;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.btn.link:hover {
+    color: #0b79d0;
+    text-decoration-color: #0b79d0;
+}

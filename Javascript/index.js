@@ -25,6 +25,10 @@ document.write(a+b);
   for (let i = 0; i < header.length; i++) {
     header[i].style.color = 'blue';
   }
+  // let head = document.getElementsByTagName('h');
+  // for(let i=0;i<h.length;i++){
+
+  // }
 //   document.write(c+typeof(a));
 document.write("<br>");
 document.write(a-b);

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="i1">content</h1>
+    <p class="p">Hello </p> -->
+    <!-- <button type = "button" onclick="changeText(this)">SUBMIT</button> -->
+    <!-- <h1 onclick="changeText(this)">Click on this text!</h1> -->
+<!-- <p id>"d"</p> -->
+ <p id="demo"></p>
+    <script>
+//         function changeText(id) {
+//   id.innerHTML = "Ooops!";
+// }
+// var a="HELLO WORLD"
+// console.log(a.toLowerCase());
+// var a="hello world";
+// var length=a.length;
+// document.getElementById("d").ineerHTML=length;
+// var dt = new Date("December 25");
+// document.write("getDate():"+dtgetDay());
+
+
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+const d = new Date();
+let day = weekday[d.getDay()];
+document.getElementById("demo").innerHTML = day;
+result=Boolean(0);
+    </script>
+</body>
+</html>

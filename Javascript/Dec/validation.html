@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<style> 
+body {
+     font-family: Arial, sans-serif; 
+     display: flex;
+      justify-content: center;
+       align-items: center;
+        height: 100vh;
+         margin: 0;
+          background-color: #f0f0f0;
+         }
+          .container1, .container2 { 
+            border: 2px solid #000;
+             border-radius: 8px;
+              padding: 20px; 
+              margin: 10px; 
+              background-color: #fff; 
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             }
+              .container1, .container2 { 
+                text-align: center;
+             } 
+             input {
+                 width: 100%; 
+                 padding: 10px; 
+                 margin-top: 10px; 
+                 margin-bottom: 10px; 
+                 border: 1px solid #ccc; 
+                 border-radius: 4px;
+                 }
+                 button { 
+                    padding: 10px 20px; 
+                    margin-top: 20px;
+                     background-color: #4CAF50; 
+                     color: white; 
+                     border: none;
+                      border-radius: 4px; 
+                      cursor: pointer; 
+                      }
+                       button:hover {
+                         background-color: #45a049; 
+                         }
+                          </style>
+<body>
+<script>
+     function data()
+     {
+        var a=document.getElementById("name").value;
+        var b=document.getElementById("password").value;
+        var c=document.getElementById("confirmpassword").value;
+        var d=document.getElementById("emailid").value;
+        var e=document.getElementById("phoneno.").value;
+        if(a=="" || b=="" || c=="" || d=="" || e=="")
+     {
+        alert("All fields are mandatory");
+        return false;
+     }
+     else if(e.length!=10){
+        alert("length should be 10");
+        return false;
+     }
+     else if(isNaN(e)){
+        alert("phone number should be numeric");
+        return false;
+     }
+     else if(b!=c){
+        alert("Incorrect password");
+        return false;
+     }
+     else if (!/^[A-Za-z0-9._]+@[A-Za-z0-9]+.[A-Za-z]+.[A-Za-z]+$/.test(d)){
+      alert("enter email correct");
+      return false;
+     }
+   //    else if (!/^[A-Za-z]+$/.test(a)) {
+   //        alert("Name should contain only alphabets");
+   //         return false;
+   //        }
+   //   document.getElementById("phoneno.").addEventListener('input', function (e) { if (this.value.length > 10) { this.value = this.value.slice(0, 10); } });
+   //   }
+</script>
+
+    <form onsubmit="return data()" action="new.html"  >
+        <div class="container1">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter Name">
+        <br><br>
+        <label for="phoneno.">Phone No.:</label>
+        <input type="number" id="phoneno." placeholder="Enter Phone No.">
+        <br><br>
+        <button type="submit">Submit</button>
+        <br><br>
+    </div>
+    <div class="container2">
+        <label for="emailid">Email id:</label>
+        <input type="email" id="emailid" placeholder="Enter emailid">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter Password">
+        <br><br>
+        <label for="confirmpassword">Confirm Password:</label>
+        <input type="password" id="confirmpassword" placeholder="Confirm Password">
+        <br><br>
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+</body>
+</html>

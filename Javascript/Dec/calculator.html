@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+   <center> <caption><h1>Simple Calculator</h1></caption> </center>
+    <table border="5" cellpadding="10px" cellspacing="10px">
+        <tr>
+            <td colspan="3">
+                <form action="">
+                    <input type="text" id="a" class="display">
+                </form>
+            </td>
+            <div >
+            <td>
+               <input type="button" value="C" onclick="clr()" class="buttons">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="1" onclick="pick(1)" class="buttons">
+             </td>
+             <td>
+                <input type="button" value="2" onclick="pick(2)" class="buttons">
+             </td>
+             <td>
+                <input type="button" value="3" onclick="pick(3)" class="buttons">
+             </td>
+             <td>
+                <input type="button" value="/" onclick="pick('/')" class="buttons">
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="4" onclick="pick(4)" class="buttons">
+             </td>
+             <td>
+                <input type="button" value="5" onclick="pick(5)" class="buttons">
+             </td>
+             <td>
+                <input type="button" value="6" onclick="pick(6)" class="buttons">
+             </td>
+             <td>
+                <input type="button" value="*" onclick="pick('*')" class="buttons">
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="7" onclick="pick(7)" class="buttons">
+             </td>
+             <td>
+                <input type="button" value="8" onclick="pick(8)" class="buttons">
+             </td>
+             <td>
+                <input type="button" value="9" onclick="pick(9)" class="buttons">
+             </td>
+             <td>
+                <input type="button" value="-" onclick="pick('-')" class="buttons">
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="." onclick="pick('.')" class="buttons">
+             </td>
+             <td>
+                <input type="button" value="0" onclick="pick(0)" class="buttons">
+             </td>
+             <td>
+                <input type="button" value="=" onclick="solve('=')" class="buttons">
+             </td>
+             <td>
+                <input type="button" value="+" onclick="pick('+')" class="buttons">
+             </td>
+        </tr>
+    </div>
+</table>
+<script src="calculator.js"></script>
+</div>
+</body>
+</html>

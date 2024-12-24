@@ -27,7 +27,7 @@ body {
                 text-align: center;
              } 
              input {
-                 width: 100%; 
+                 width: 90%; 
                  padding: 10px; 
                  margin-top: 10px; 
                  margin-bottom: 10px; 
@@ -37,7 +37,7 @@ body {
                  button { 
                     padding: 10px 20px; 
                     margin-top: 20px;
-                     background-color: #4CAF50; 
+                     background-color: #1a123d; 
                      color: white; 
                      border: none;
                       border-radius: 4px; 
@@ -54,29 +54,42 @@ body {
         var a=document.getElementById("name").value;
         var b=document.getElementById("password").value;
         var c=document.getElementById("confirmpassword").value;
-        var d=document.getElementById("emailid").value;
+        var email=document.getElementById("email").value;
         var e=document.getElementById("phoneno.").value;
-        if(a=="" || b=="" || c=="" || d=="" || e=="")
-     {
-        alert("All fields are mandatory");
-        return false;
-     }
-     else if(e.length!=10){
-        alert("length should be 10");
-        return false;
-     }
-     else if(isNaN(e)){
-        alert("phone number should be numeric");
-        return false;
-     }
-     else if(b!=c){
-        alert("Incorrect password");
-        return false;
-     }
-     else if (!/^[A-Za-z0-9._]+@[A-Za-z0-9]+.[A-Za-z]+.[A-Za-z]+$/.test(d)){
-      alert("enter email correct");
+   //      if(a=="" || b=="" || c=="" || d=="" || e=="")
+   //   {
+   //      alert("All fields are mandatory");
+   //      return false;
+   //   }
+   //   else if(e.length!=10){
+   //      alert("length should be 10");
+   //      return false;
+   //   }
+   //   else if(isNaN(e)){
+   //      alert("phone number should be numeric");
+   //      return false;
+   //   }
+   //   else if(b!=c){
+   //      alert("Incorrect password");
+   //      return false;
+   //   }
+   //   const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+   //   return re.test(d);
+   //   var emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+   //   else if (!emailRegex.test(d)){
+   //    alert("enter email correct");
+   //    return false;
+   //   }
+   //   return true;
+   if(email.indexOf("@")<=0){
+      alert("Invalid email");
+      return false;
+   }
+   if(email.charAt(email.length-4)!="."&& email.charAt(email.length-3)!="."){
+      alert("dot required");
       return false;
      }
+     return true;
      }
    //    else if (!/^[A-Za-z]+$/.test(a)) {
    //        alert("Name should contain only alphabets");
@@ -86,27 +99,27 @@ body {
    //   }
 </script>
 
-    <form onsubmit="return data()" action="new.html"  >
-        <div class="container1">
+    <form onsubmit="return data()" action="10.html"  >
+        <!-- <div class="container1">
         <label for="name">Name:</label>
         <input type="text" id="name" placeholder="Enter Name">
         <br><br>
         <label for="phoneno.">Phone No.:</label>
-        <input type="number" id="phoneno." placeholder="Enter Phone No.">
+        <input type="phone" id="phoneno." placeholder="Enter Phone No.">
         <br><br>
         <button type="submit">Submit</button>
         <br><br>
-    </div>
+    </div> -->
     <div class="container2">
-        <label for="emailid">Email id:</label>
-        <input type="email" id="emailid" placeholder="Enter emailid">
+        <label for="">Email id:</label>
+        <input type="email" id="email" placeholder="Enter emailid">
         <br><br>
-        <label for="password">Password:</label>
+        <!-- <label for="password">Password:</label>
         <input type="password" id="password" placeholder="Enter Password">
         <br><br>
         <label for="confirmpassword">Confirm Password:</label>
         <input type="password" id="confirmpassword" placeholder="Confirm Password">
-        <br><br>
+        <br><br> -->
         <button type="submit">Submit</button>
     </div>
     </form>

@@ -20,9 +20,9 @@
         ul {
             list-style-type: none;
             padding: 0;
-            background-color: rgb(205, 219, 196);
+            background-color: rgb(218, 219, 196);
             border-radius: 4px;
-        }
+             }
         li {
             padding: 10px;
             cursor: pointer;
@@ -57,7 +57,13 @@
             const filter = searchInput.value.toLowerCase();
             Array.from(itemsList).forEach(item => {
                 const text = item.textContent.toLowerCase();
-                item.classList.toggle('hidden', !text.includes(filter));
+                // item.classList.toggle('hidden',!text.includes(filter));
+                if(text.includes(filter)){
+                   item.classList.remove('hidden');
+                }
+                else{
+                    item.classList.add('hidden');
+                }
             });
         });
     </script>

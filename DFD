@@ -1,0 +1,41 @@
++-------------------------+           +----------------------------+
+|         User             |           |   Firebase Services         |
+|-------------------------|           |----------------------------|
+| - Register/Login         |<---------| - Firebase Authentication  |
+| - Browse/Register Events |           | - Firebase Firestore        |
+| - Receive Notifications  |           | - Firebase Cloud Messaging  |
++-------------------------+           +----------------------------+
+        |                                       |
+        v                                       v
++---------------------------+           +----------------------------+
+| 1. User Authentication     |           | 3. Event Management        |
+|---------------------------|           |----------------------------|
+| - Login/Sign Up           |           | - Create/Update/Delete Events|
+| - Send Auth Requests      |           | - Store Event Data         |
++---------------------------+           +----------------------------+
+        |                                       |
+        v                                       |
++---------------------------+                   |
+| 2. Event Listing and Registration |            |
+|---------------------------|                   |
+| - Browse Events            |                   |
+| - Register for Events      |                   |
+| - Display Event Details    |                   |
++---------------------------+                   |
+        |                                       |
+        v                                       v
++---------------------------+          +-----------------------------+
+| 4. Notification System     |<--------| Firebase Cloud Messaging (FCM)|
+|---------------------------|          +-----------------------------+
+| - Receive Notifications    |
+| - Push Notifications to Users|
++---------------------------+
+         ^
+         |
++-----------------------------+
+| Firestore Database           |
+|-----------------------------|
+| - Store Event Data           |
+| - Store User Info            |
+| - Store Registration Info    |
++-----------------------------+
